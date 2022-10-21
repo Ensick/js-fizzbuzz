@@ -10,26 +10,32 @@
 // 1. Scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 // 2. Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
-let div = document.getElementById("box")
+ let div = document.getElementById("box")
 
-let span = document.getElementById("span")
+ let span = document.createElement("span")
 
-let x = 1;
+ div.append(span)
 
-for( let x=1; x=100; x++){
 
-    div.append(span)
+ console.log("x")
 
-    if( x % 3){
 
-        span.innerHTML += `fiz`;
+  for( let x=1; x <=100; x++){
 
-    } else if(x % 5){
+     if( x % 3 == 0 && x % 5 == 0 ){
 
-        span.innerHTML += `buzz`
+         span.innerHTML += `pera`;
+         console.log("x")
 
-    } else if( x % 3 && x % 5){
+     }else if(x % 5 == 0){
 
-        span.innerHTML += `fizzbuzz`
-    }
-}
+         span.innerHTML += `mela`
+         console.log("x")
+
+     } else if(x % 3 == 0){
+
+         span.innerHTML += `arancia`
+         console.log("x")
+     }
+
+  }
