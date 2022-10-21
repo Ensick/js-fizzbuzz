@@ -1,0 +1,8 @@
+.ms-bg-gray{
+    background-color: lightgray;
+}
+
+#box *{
+    color: blue;
+    flex-grow: 1;
+}
