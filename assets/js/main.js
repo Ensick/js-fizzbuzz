@@ -12,12 +12,6 @@
 
 let box = document.getElementById("box")
 
-
-
-
-
-
-
 for (let x = 1; x <= 100; x++) {
 
     let divNuovo = document.createElement("div")
@@ -26,25 +20,25 @@ for (let x = 1; x <= 100; x++) {
 
     if (x % 3 == 0 && x % 5 == 0) {
 
-        divNuovo.innerText = `FizzBuzz`;
+        divNuovo.innerHTML = `<h4>FizzBuzz!</h4>`;
         divNuovo.classList.add("ms-bg-red")
 
         console.log("FizzBuzz")
 
     } else if (x % 5 == 0) {
 
-        divNuovo.innerText = `Buzz`;
+        divNuovo.innerHTML = `<h4>Buzz!</h4>`;
         divNuovo.classList.add("ms-bg-orange")
         console.log("Buzz")
 
     } else if (x % 3 == 0) {
 
-        divNuovo.innerText = `Fizz`;
+        divNuovo.innerHTML = `<h4>Fizz!</h4>`;
         divNuovo.classList.add("ms-bg-green")
         console.log("Fizz")
     } else {
 
-        divNuovo.innerText = `${x}`;
+        divNuovo.innerHTML = `<h4>${x}</h4>`;
         divNuovo.classList.add("ms-bg-blue")
         console.log(x)
     }
