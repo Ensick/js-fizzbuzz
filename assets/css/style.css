@@ -1,8 +1,40 @@
-.ms-bg-gray{
-    background-color: lightgray;
+
+body{
+    background-color: #083B4C;
 }
 
-#box *{
-    color: blue;
-    flex-grow: 1;
+.ms-fs-1{
+    font-size: 6rem;
 }
+
+.box-js{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.ms-cont-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+}
+
+.ms-bg-red{
+    background-color: #F0466F;
+}
+
+.ms-bg-orange{
+    background-color: #FFD166;
+}
+
+.ms-bg-green{
+    background-color: #0CD6A1;
+}
+
+.ms-bg-blue{
+    background-color:#1389B2;
+}
+
+
+

@@ -10,33 +10,45 @@
 // 1. Scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 // 2. Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
- let section = document.getElementById("box")
-
- let div = document.createElement("div")
-
- section.append(div)
+let box = document.getElementById("box")
 
 
-  for( let x=1; x<=100; x++){
 
-     if( x % 3 == 0 && x % 5 == 0 ){
 
-         div.innerHTML +=`<div>pera</div>`;
-         console.log("pera")
 
-     }else if(x % 5 == 0){
 
-         div.innerHTML += `<div>mela</div>`
-         console.log("mela")
 
-     } else if(x % 3 == 0){
+for (let x = 1; x <= 100; x++) {
 
-         div.innerHTML += `<div>arancia</div>`
-         console.log("arancia")
-     } else {
+    let divNuovo = document.createElement("div")
+    divNuovo.classList.add("box-js")
 
-        div.innerHTML += `<div>${x}</div>`
+
+    if (x % 3 == 0 && x % 5 == 0) {
+
+        divNuovo.innerText = `FizzBuzz`;
+        divNuovo.classList.add("ms-bg-red")
+
+        console.log("FizzBuzz")
+
+    } else if (x % 5 == 0) {
+
+        divNuovo.innerText = `Buzz`;
+        divNuovo.classList.add("ms-bg-orange")
+        console.log("Buzz")
+
+    } else if (x % 3 == 0) {
+
+        divNuovo.innerText = `Fizz`;
+        divNuovo.classList.add("ms-bg-green")
+        console.log("Fizz")
+    } else {
+
+        divNuovo.innerText = `${x}`;
+        divNuovo.classList.add("ms-bg-blue")
         console.log(x)
-     }
+    }
 
-  }
+    box.append(divNuovo)
+
+}
